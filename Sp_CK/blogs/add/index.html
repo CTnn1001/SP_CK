@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm</title>
+    <link rel="stylesheet" href="/blogs/add/styles.css">
+</head>
+
+<body>
+    <div>
+        <a href="/blogs/index.html">Quay Lại</a>
+        <h2>Thêm bài</h2>
+        <label for="title">Tiêu đề:</label><br>
+        <input type="text" id="title" name="title"><br>
+
+        <label for="content">Ý tưởng:</label><br>
+        <textarea id="content" name="content"></textarea><br>
+
+        <label for="image">Chọn ảnh:</label><br>
+        <input type="file" id="image" name="image" accept="image/*"><br>
+
+        <button type="button" id="add_button">Thêm bài</button>
+    </div>
+
+    <div class="temp">
+        <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; margin-left: 90px;">Lịch sử bài đăng</h1>
+        <div id="blog-container-re">
+            
+        </div>
+    </div>
+
+    <script src="/blogs/add/script.js" type="module"></script>
+</body>
+
+</html>
