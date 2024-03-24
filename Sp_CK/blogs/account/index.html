@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tài khoản</title>
+    <link rel="stylesheet" href="/blogs/account/styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav>
+            <div class="menu-icon">
+                <i class="fa fa-bars fa-2x"></i>
+            </div>
+            <div class="logo">
+                BLOG
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="/blogs/index.html">Trang Chủ</a></li>
+                    <li><a href="/blogs/about/index.html">Về Chúng Tôi</a></li>
+                    <li><a href="/blogs/contact/index.html">Liên Hệ</a></li>
+                    <li><a href="/blogs/account/index.html">Tài Khoản</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="profile-container"> 
+        <div class="user-info">
+            <p>Tên người dùng: <span id="user-name"></span></p>
+            <img id="user-photo" src="" alt="User Photo" class="user-image">
+        </div>
+        <div class="update-form">
+            <input type="text" id="new-name" placeholder="Nhập tên mới">
+            <button id="update-name-btn">Đăng tên</button>
+        </div>
+        <div class="update-form">
+            <input type="file" id="new-photo" accept="image/*"> 
+            <button id="update-photo-btn">Đăng ảnh</button>
+        </div>
+        <div class="khung1">
+            <button id="logout_btn">Đăng Xuất</button>
+            <a href="/blogs/index.html">Quay lại</a>
+        </div>
+    </div>    
+
+    <footer>
+        <div class="f-item-con">
+            <div class="app-info">
+                <span class='app-name'>
+                    <span class='app-initial'>B</span>LOG
+                </span>
+                <p>Nền tảng <strong>Mạng xã hội,</strong>
+                    cùng chia sẽ khoảng khắc!</p>
+            </div>
+            <div class="useful-links">
+                <div class="footer-title">Liên kết hữu ích</div>
+                <ul>
+                    <li>Đăng kí</li>
+                    <li>Về chúng tôi</li>
+                    <li>Các nguyên tắc, tiêu chuẩn</li>
+                    <li>Trở thành cộng tác viên</li>
+                </ul>
+            </div>
+            <div class="help-sec">
+                <div class="footer-title">Trợ giúp</div>
+                <ul>
+                    <li>Giúp tôi</li>
+                    <li>Phản hồi</li>
+                    <li>Tố cáo, khiếu nại</li>
+                </ul>
+            </div>
+            <div class="g-i-t">
+                <div class="footer-title">Phản hồi nhanh</div>
+                <form action="/" method="post" class="space-y-2">
+                    <input type="text" name="g-name" class="g-inp" id="g-name" placeholder='Tên người dùng' />
+                    <input type="email" name="g-email" class="g-inp" id="g-email" placeholder='Địa chỉ email' />
+                    <textarea type="text" name="g-msg" class="g-inp h-40 resize-none" id="g-msg"
+                        placeholder='Lời nhắn...'></textarea>
+                    <button type="submit" class='f-btn'>Gửi</button>
+                </form>
+            </div>
+        </div>
+        <div class='cr-con'>Copyright &copy; 2022</div>
+    </footer>
+
+    <script type="module" src="/blogs/account/script.js"></script>
+    <script type="module" src="/blogs/js/logout.js"></script>
+</body>
+
+</html>

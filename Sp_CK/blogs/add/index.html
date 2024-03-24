@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm</title>
+    <link rel="stylesheet" href="/blogs/add/styles.css">
+</head>
+
+<body>
+    <div>
+        <a href="/blogs/index.html" style="color: red; text-decoration: none;">Quay Lại</a>
+        <h2>Thêm bài</h2>
+        <label for="title">Tiêu đề:</label><br>
+        <input type="text" id="title" name="title" style="padding: 5px 10px;"><br>
+
+        <label for="content">Nội dung:</label><br>
+        <textarea id="content" name="content" style="padding: 10px 13px;"></textarea><br>
+
+        <label for="image">Chọn ảnh:</label><br>
+        <input type="file" id="image" name="image" accept="image/*"><br>
+
+        <button type="button" id="add_button" style="padding: 10px 13px; margin-top: 20px; border-radius: 20%; border: none; color: white; background-color: blue; cursor: pointer;">Thêm bài</button>
+    </div>
+
+    <div class="temp">
+        <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; margin-left: 90px;">Lịch sử bài đăng</h1>
+        <div id="blog-container-re">
+            
+        </div>
+    </div>
+
+    <footer>
+        <div class="f-item-con">
+            <div class="app-info">
+                <span class='app-name'>
+                    <span class='app-initial'>B</span>LOG
+                </span>
+                <p>Nền tảng <strong>Mạng xã hội,</strong>
+                    cùng chia sẽ khoảng khắc!</p>
+            </div>
+            <div class="useful-links">
+                <div class="footer-title">Liên kết hữu ích</div>
+                <ul>
+                    <li>Đăng kí</li>
+                    <li>Về chúng tôi</li>
+                    <li>Các nguyên tắc, tiêu chuẩn</li>
+                    <li>Trở thành cộng tác viên</li>
+                </ul>
+            </div>
+            <div class="help-sec">
+                <div class="footer-title">Trợ giúp</div>
+                <ul>
+                    <li>Giúp tôi</li>
+                    <li>Phản hồi</li>
+                    <li>Tố cáo, khiếu nại</li>
+                </ul>
+            </div>
+            <div class="g-i-t">
+                <div class="footer-title">Phản hồi nhanh</div>
+                <form action="/" method="post" class="space-y-2">
+                    <input type="text" name="g-name" class="g-inp" id="g-name" placeholder='Tên người dùng' />
+                    <input type="email" name="g-email" class="g-inp" id="g-email" placeholder='Địa chỉ email' />
+                    <textarea type="text" name="g-msg" class="g-inp h-40 resize-none" id="g-msg"
+                        placeholder='Lời nhắn...'></textarea>
+                    <button type="submit" class='f-btn'>Gửi</button>
+                </form>
+            </div>
+        </div>
+        <div class='cr-con'>Copyright &copy; 2022</div>
+    </footer>
+
+    <script src="/blogs/add/script.js" type="module"></script>
+</body>
+
+</html>
